@@ -1,0 +1,58 @@
+{
+  "name": "dsh-canvas-branch-chat",
+  "version": "0.2.1",
+  "type": "module",
+  "description": "A branching canvas chat plugin for the DSH Web UI: grow conversations in 2D, read Word/PowerPoint sources, and export answers as new documents.",
+  "author": "xiaozhxi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaozhxi/dsh-canvas-branch-chat.git"
+  },
+  "homepage": "https://github.com/xiaozhxi/dsh-canvas-branch-chat#readme",
+  "bugs": {
+    "url": "https://github.com/xiaozhxi/dsh-canvas-branch-chat/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "canvas",
+    "chat",
+    "branching",
+    "plugin"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./documents": "./documents.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "documents.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "dependencies": {
+    "docx": "^9.13.0",
+    "jszip": "^3.10.2",
+    "mammoth": "^1.13.0",
+    "pptxgenjs": "^4.0.1",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}

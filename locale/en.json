@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Branching Canvas",
+    "description": "A conversation that branches freely on an infinite canvas. Reuses DSH models and APIs, reads Word / PowerPoint sources, and exports an answer or branch as a new document."
+  }
+}

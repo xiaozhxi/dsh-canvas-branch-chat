@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="cc-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f7cff"/>
+      <stop offset="0.55" stop-color="#7b5cff"/>
+      <stop offset="1" stop-color="#20c7b7"/>
+    </linearGradient>
+    <linearGradient id="cc-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="cc-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="url(#cc-bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.2"/>
+  <path d="M18 20 C 27 20, 27 32, 35 32 C 43 32, 43 44, 50 44" fill="none" stroke="url(#cc-line)" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M35 32 C 42 32, 41 22, 49 22" fill="none" stroke="url(#cc-line)" stroke-width="2.4" stroke-linecap="round" stroke-opacity="0.8"/>
+  <g filter="url(#cc-glow)">
+    <circle cx="17" cy="20" r="5.2" fill="#ffffff"/>
+    <circle cx="35" cy="32" r="4.4" fill="#ffffff" fill-opacity="0.94"/>
+    <circle cx="50" cy="44" r="5.2" fill="#ffffff"/>
+    <circle cx="50" cy="22" r="3.8" fill="#ffffff" fill-opacity="0.9"/>
+  </g>
+  <circle cx="17" cy="20" r="2.2" fill="#5b6cff"/>
+  <circle cx="35" cy="32" r="1.9" fill="#6c5cff"/>
+  <circle cx="50" cy="44" r="2.2" fill="#18b9a9"/>
+  <circle cx="50" cy="22" r="1.6" fill="#6c5cff"/>
+</svg>
