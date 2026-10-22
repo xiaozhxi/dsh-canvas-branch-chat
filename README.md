@@ -1,6 +1,6 @@
 # 画布分叉聊天 · Branching Canvas
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![许可证：MIT](https://img.shields.io/badge/License-MIT-blue.svg)](许可证)
 
 一个把 DSH 对话变成「可自由分叉的画布」的插件。每个回答是一张卡片，卡片之间用线连接；你可以从任意一张卡片继续追问、拖动画布、缩放、发散出新的方向，而不是被锁在一条上下滚动的聊天记录里。
 
@@ -37,15 +37,13 @@ npm ci
 
 然后在 DSH 的插件管理里，把这个目录作为**本地 bundle** 安装。安装后刷新 DSH Web 页面，左侧面板会出现「画布分叉聊天」。
 
-> 不要把 `node_modules/` 提交到 Git 仓库；它只用于本地运行，`package-lock.json` 会锁定依赖版本。
->
-> 如果只克隆而不执行 `npm ci`，Word / PPT 相关的 `docx`、`mammoth`、`pptxgenjs` 等依赖会缺失，插件启动时会报模块找不到。
+
 
 ### 本机开发安装
 
 当前开发目录也可以直接作为本地 bundle 安装：
 
-```text
+```文本
 <你克隆下来的仓库目录>
 ```
 
